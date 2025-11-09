@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Olympus Rising</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Ambient sound (loop). Αν δεν θες ήχο, αφαίρεσέ το ή άδειασέ το src. -->
+  <audio id="ambientAudio" src="assets/sounds/backgroundloop.mp3" loop></audio>
+
+  <!-- Global sound toggle (ambience + narration) -->
+  <button id="voiceToggle" aria-label="Toggle sound">🔇</button>
+
+  <!-- Main container που γεμίζει δυναμικά από το main.js -->
+  <div id="gameContainer">
+    <div id="contentBox">
+      <h1 id="title"></h1>
+      <p id="storyText"></p>
+      <div id="buttonsContainer"></div>
+    </div>
+  </div>
+
+  <!-- Το main.js διαχειρίζεται εισαγωγή, οδηγίες, Explore AR και τέλος/επανεκκίνηση -->
+  <script src="main.js"></script>
+</body>
+</html>
