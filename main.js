@@ -65,15 +65,7 @@ const STAGES = {
     buttons: [
       { label: "Back", action: () => goTo("role") }
     ]
-  },
-end: {
-  bg: "assets/olympus.jpg",
-  title: "Ολοκλήρωση",
-  text: `Ολοκλήρωσες το ταξίδι σου.<br><br>Θέλεις να ξαναρχίσεις;`,
-  buttons: [
-    { label: "Ξεκίνημα ξανά", action: () => goTo("intro", true) }
-  ]
-}
+  }
 };
 
 // ===== Sound / Narration =====
