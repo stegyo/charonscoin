@@ -6,7 +6,7 @@
   <title>Charon΄s coin</title>
   <style>
     body{
-        background-image: url(https://stegyo.github.io/charonscoin/assets/charon2.png);
+        background-image: url(assets/charon2.png);
     }
     #gameContainer{
         padding: 20px 30px;
@@ -17,9 +17,15 @@
         color: white;
     }
     .answerBTN{
-        margin: 2px;
+        margin: 4px;
         background-color: #aac3e3;
         font-size: 16px;
+        padding: 8px;
+        border-radius: 10px;
+        width: 80%;
+    }
+    #buttonsContainer{
+        text-align: center;
     }
   </style>
 </head>
@@ -47,13 +53,18 @@
           <p>dfkgjhdf kjdfg kjhdfkj dfgkdfhkdfj hkdfg hdkfj hdfk dfkj hdfk dfkj dfk?</p>
       </div>
       <div id="buttonsContainer">
-          <button class='answerBTN'>Answer 01</button><br/>
-          <button class='answerBTN'>Answer 01</button><br/>
-          <button class='answerBTN'>Answer 01</button><br/>
-          <button class='answerBTN'>Answer 01</button><br/>
+          <button class='answerBTN' onclick='alert("Try Again")'>Answer 01 sdfsdfsdfsdf sdfsdfsd dfgdfgdfgdfg dfgdf gdfg dfg df gdf gdf g dfg dfg df gdf g dfg df g dfg df g dfg df gdf gdf g dfg </button><br/>
+          <button class='answerBTN' >Answer 01 sdfsdfdfs s fsd</button><br/>
+          <button class='answerBTN' onclick='alert("Try Again")'>Answer 01 sdfsdfsd fsd fsd fsd fsd fs fsd fsd </button><br/>
       </div>
     </div>
   </div>
+  <script>
+      function correctAnswer(){
+          alert("That's RIGHT... continue your quest!!!");
+          window.location.href = 'ar.html';
+      }
+  </script>
 
   
 </body>
