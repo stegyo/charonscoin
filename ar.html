@@ -34,6 +34,19 @@
       background: #33691e; color: white;
       border: none; border-radius: 10px; cursor: pointer;
     }
+    #questionsDiv{
+      display: none;
+      position: relative;
+      top: 10%;
+      left: 50%;
+      transform: translate(-50%);
+      background: lightblue;
+      padding: 10px 20px;
+      border-radius: 10px;
+      border: solid 1px blue;
+      max-width: 80%;
+      z-index: 50;
+    }
   </style>
 </head>
 
@@ -43,7 +56,21 @@
     <button id="start-ar-engine-button">Start AR</button>
     <button id="return-button">Return</button>
   </div>
-
+  
+  <div id="questionsDiv">
+    <p>Πληροφορίες</p>
+    <p>
+      Εδώ φdfsdkljf lsdjsdklf sdklf sdklf lsdkf lsdjf lsdflksdfklsd klf sdf klsdf sdf sdf sdf sdjfkls klfjlsdfjlsd jsdl klsd klsdf klsd kl skl sdklf lslsd flαίνονται οι πληροφορίες
+    </p>
+    <p>
+      Ερώτηση:<br/>
+      kjhkjh kljh KJh KJ
+    </p>
+    <button id="yesBTN">Ναι</button>
+    <button id="noBTN">Όχι</button>
+    
+  </div>
+  
   <div id="ar-ui" class="mindar-container"></div>
 
   <script type="module">
@@ -86,13 +113,17 @@
 
       anchor.group.add(audio);
 
-      anchor.onTargetFound = () => audio.play();
+      anchor.onTargetFound = () => {
+        audio.play();
+        showDiv('questionsDiv');
+      }
       anchor.onTargetLost = () => audio.pause();
 
       return anchor;
     };
 
     const start = async () => {
+      hideDiV('ui-buttons');
       if (isStarted) return;
       isStarted = true;
 
@@ -144,6 +175,16 @@
     };
 
     startAREngineButton.addEventListener("click", start);
+  </script>
+  <script>
+    function showDiv(id) {
+      document.getElementById(id).style.display = "block";
+    }
+    function hideDiv(id) {
+      document.getElementById(id).style.display = "none";
+    }
+
+
   </script>
 
 </body>
