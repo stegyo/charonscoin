@@ -49,7 +49,6 @@ const STAGES = {
           stopAmbient();
           window.open(`ar.html?from=${currentStage}`, "_blank");
       }},
-      { label: "Finish Task", action: () => goTo("end") },
       { label: "Back", action: () => goTo("role") }
     ]
   },
