@@ -47,6 +47,14 @@
       max-width: 80%;
       z-index: 50;
     }
+    .questBTN{
+        margin: 4px;
+        background-color: #aac3e3;
+        font-size: 16px;
+        padding: 8px;
+        border-radius: 10px;
+    }
+    #buttonsContainer{
   </style>
 </head>
 
@@ -57,11 +65,11 @@
     <button id="return-button">Return</button>
   </div>
   
-  <div id="questionsDiv">
+  <div id="questionsDiv" style='text-align: center;'>
     <p>
       Hey you! Could you please help a poor skeleton out?<br/> 
     </p>
-    <button id="cancelBTN" onclick="hideDiv('questionsDiv')">Cancel</button> - <button id="yesBTN" onclick="window.location.href='question1.html';">Help him</button>
+    <button class='questBTN' id="yesBTN" onclick="window.location.href='question1.html';">Help him</button>  &nbsp;&nbsp;&nbsp;&nbsp; <button class='questBTN'  id="cancelBTN" onclick="hideDiv('questionsDiv')">Cancel</button> 
 
     
   </div>
