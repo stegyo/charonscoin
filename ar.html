@@ -37,7 +37,7 @@
     #questionsDiv{
       display: none;
       position: relative;
-      top: 10%;
+      top: 20px;
       left: 50%;
       transform: translate(-50%);
       background: lightblue;
@@ -58,12 +58,12 @@
   </div>
   
   <div id="questionsDiv">
-    <p>Βρήκατε τον σκελετό</p>
     <p>
-      εμφάνιση περισσότερων...
+      Item found...<br/> 
+      Look around and answer the question
     </p>
-    <button id="yesBTN">Ναι</button>
-    <button id="noBTN">Όχι</button>
+    <button id="yesBTN">Show question</button>
+
     
   </div>
   
@@ -142,7 +142,7 @@
         0, 
         listener, 
         './assets/sounds/sound1.mp3', 
-        new THREE.Vector3(0.02, 0.02, 0.02) 
+        new THREE.Vector3(0.03, 0.03, 0.03) 
       );
 
       await createExperience(
