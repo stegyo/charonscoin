@@ -118,6 +118,7 @@
 
       anchor.onTargetFound = () => {
         audio.play();
+        alert(anchor.targetIndex);
         showDiv('questionsDiv');
       }
       anchor.onTargetLost = () => audio.pause();
