@@ -150,7 +150,7 @@
       anchor.group.add(audio);
 
       anchor.onTargetFound = () => {
-        audio.play();
+        audio.pause();
         //alert(anchor.targetIndex);
         showDiv('questionsDiv'+anchor.targetIndex);
       };
