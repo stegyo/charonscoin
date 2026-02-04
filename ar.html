@@ -154,7 +154,10 @@
         //alert(anchor.targetIndex);
         showDiv('questionsDiv'+anchor.targetIndex);
       }
-      anchor.onTargetLost = () => audio.pause();
+      anchor.onTargetLost = () => {
+        showDiv('scanning');
+        audio.pause();
+      }
 
       return anchor;
     };
