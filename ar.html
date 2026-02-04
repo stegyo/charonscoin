@@ -153,8 +153,11 @@
         audio.play();
         //alert(anchor.targetIndex);
         showDiv('questionsDiv'+anchor.targetIndex);
-      }
-      anchor.onTargetLost = () => audio.pause();
+      };
+      anchor.onTargetLost = () => {
+        audio.pause();
+      };
+        
 
       return anchor;
     };
