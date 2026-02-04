@@ -154,10 +154,7 @@
         //alert(anchor.targetIndex);
         showDiv('questionsDiv'+anchor.targetIndex);
       }
-      anchor.onTargetLost = () => {
-        showDiv('scanning');
-        audio.pause();
-      }
+      anchor.onTargetLost = () => audio.pause();
 
       return anchor;
     };
@@ -169,7 +166,7 @@
 
       mindarThree = new window.MINDAR.IMAGE.MindARThree({
         container: arUI,
-        imageTargetSrc: './assets/targets/markers1.mind' // Βεβαιώσου ότι περιέχει 3 στόχους
+        imageTargetSrc: './assets/targets/targets.mind' // Βεβαιώσου ότι περιέχει 3 στόχους
       });
 
       const { renderer, scene, camera } = mindarThree;
