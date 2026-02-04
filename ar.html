@@ -192,8 +192,19 @@
   </script>
   <script>
     function showDiv(id) {
+      /*
+      hideDiv('questionsDiv0');
+      hideDiv('questionsDiv1');
+      hideDiv('questionsDiv2');
+      */
+      var questionDivs = document.getElementsByClassName('questionsDiv');
+      for (var i = 0; i < questionDivs.length; i ++) {
+          questionDivs[i].style.display = 'none';
+      }
+      
       document.getElementById(id).style.display = "block";
     }
+    
     function hideDiv(id) {
       document.getElementById(id).style.display = "none";
     }
