@@ -65,13 +65,23 @@
     <button id="return-button">Return</button>
   </div>
   
-  <div id="questionsDiv" style='text-align: center;'>
+  <div id="questionsDiv0" style='text-align: center;'>
     <p>
       Hey you! Could you please help a poor skeleton out?<br/> 
     </p>
-    <button class='questBTN' id="yesBTN" onclick="window.location.href='question1.html';">Help him</button>  &nbsp;&nbsp;&nbsp;&nbsp; <button class='questBTN'  id="cancelBTN" onclick="hideDiv('questionsDiv')">Cancel</button> 
-
-    
+    <button class='questBTN' id="yesBTN" onclick="window.location.href='question1.html';">Help him</button>  &nbsp;&nbsp;&nbsp;&nbsp; <button class='questBTN'  id="cancelBTN" onclick="hideDiv('questionsDiv0')">Cancel</button> 
+  </div>
+  <div id="questionsDiv1" style='text-align: center;'>
+    <p>
+      22222222222222222222222<br/> 
+    </p>
+    <button class='questBTN' id="yesBTN" onclick="window.location.href='question2.html';">Help him</button>  &nbsp;&nbsp;&nbsp;&nbsp; <button class='questBTN'  id="cancelBTN" onclick="hideDiv('questionsDiv1')">Cancel</button> 
+  </div>
+  <div id="questionsDiv2" style='text-align: center;'>
+    <p>
+      33333333333333333333333333<br/> 
+    </p>
+    <button class='questBTN' id="yesBTN" onclick="window.location.href='question3.html';">Help him</button>  &nbsp;&nbsp;&nbsp;&nbsp; <button class='questBTN'  id="cancelBTN" onclick="hideDiv('questionsDiv2')">Cancel</button> 
   </div>
   
   <div id="ar-ui" class="mindar-container"></div>
@@ -118,8 +128,8 @@
 
       anchor.onTargetFound = () => {
         audio.play();
-        //alert(anchor.targetIndex);
-        showDiv('questionsDiv');
+        alert(anchor.targetIndex);
+        showDiv('questionsDiv'+anchor.targetIndex);
       }
       anchor.onTargetLost = () => audio.pause();
 
