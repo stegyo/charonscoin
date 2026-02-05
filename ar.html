@@ -83,8 +83,8 @@
 <body>
 
   <div id="ui-buttons">
-    <h2>Start your quest</h2>
-    <button id="start-ar-engine-button">Start AR</button>
+    
+    <button id="start-ar-engine-button">START</button>
     <button id="return-button">Return</button>
   </div>
   
@@ -236,15 +236,7 @@
     }
 
     function loadQuestion(questionPage){
-      //window.location.href='question1.html'
-      var questionDivs = document.getElementsByClassName('questionsDiv');
-      for (var i = 0; i < questionDivs.length; i ++) {
-          questionDivs[i].style.display = 'none';
-      }
-      window.open(
-        questionPage,
-        '_blank' 
-      );
+      window.location.href = questionPage;
     }
 
 
