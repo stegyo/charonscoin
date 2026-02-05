@@ -13,7 +13,7 @@ let currentStage = "intro";
 // ===== Stage data =====
 const STAGES = {
   intro: {
-    bg: "assets/charon2.png",
+    bg: "assets/charon2.jpg",
     title: "Charon΄s coin",
     text: `HELP!`,
     buttons: [
