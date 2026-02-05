@@ -31,7 +31,7 @@ const STAGES = {
   },
 
   role: {
-    bg: "assets/skullbones.png",
+    bg: "assets/skullbones.jpg",
     title: "Your Task",
     text: `Help a poor skeleton out!`,
     buttons: [
@@ -41,7 +41,7 @@ const STAGES = {
   },
 
   lore: {
-    bg: "assets/startar.png",
+    bg: "assets/startar.jpg",
     title: "Next Step",
     text: `Use AR to unravel the story`,
     buttons: [
@@ -54,7 +54,7 @@ const STAGES = {
   },
 
   instructions: {
-    bg: "assets/instructions.png",
+    bg: "assets/instructions.jpg",
     title: "How to Play — Overview",
     text: `
       • Your mission is to help the skeleton get back his charon's coin.<br>
