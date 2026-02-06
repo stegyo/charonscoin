@@ -58,7 +58,7 @@ const STAGES = {
     title: "How to Play — Overview",
     text: `
       • Your mission is to help the skeleton get back his charon's coin.<br>
-      • Use your device camera to scan AR markers around the museum, you can see them in the brochure.<br>
+      • Use your device camera to scan AR markers around the museum, you can see them in the leaflet.<br>
       • Each marker gives you a question, answer correctly and you will get the information you need to complete the game.<br>
       • Collect all the pieces, and finish the game.<br>
     `,
