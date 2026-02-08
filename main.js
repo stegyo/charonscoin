@@ -57,7 +57,7 @@ const STAGES = {
     bg: "assets/instructions.jpg",
     title: "How to Play — Overview",
     text: `
-    FIND THE ITEMS PICTURED IN THE LEAFLET INSIDE THE MUSEUM! PLEASE FOLLOW THEM IN ORDER OF TH PICTURES!!!
+    FIND THE ITEMS PICTURED IN THE LEAFLET INSIDE THE MUSEUM! PLEASE FOLLOW THEM IN ORDER OF THE PICTURES!!!<br>
       • Your mission is to help the skeleton get back his charon's coin.<br>
       • Use your device camera to scan AR markers around the museum, you can see them in the leaflet.<br>
       • Each marker gives you a question, answer correctly and you will get the information you need to complete the game.<br>
